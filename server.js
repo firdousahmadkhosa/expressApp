@@ -18,8 +18,8 @@ app.get("/",(req,res)=>{
 // baseurl:  http://localhot:8000/blogs/api/v1
 // app.use('/blogs/api/v1', blogRouter )
 
-
+module.exports = app;
 //-------server listening port 8080----------
-app.listen(8000,()=>{
-    console.log("server is running in port: 8000");
-})
+// app.listen(8000,()=>{
+//     console.log("server is running in port: 8000");
+// })

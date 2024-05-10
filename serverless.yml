@@ -1,0 +1,17 @@
+service: integrationAPI #Name of your App
+provider:
+  name: aws
+  runtime: nodejs14.x # Node JS version
+  memorySize: 512
+  timeout: 30
+  stage: emailSms #emailSms #emailSms #emailSmsUAT
+  region: us-east-2 # AWS region
+  apiGateway:
+    binaryMediaTypes:
+      - "multipart/form-data"
+functions:
+  api:
+    handler: lambda.handler
+    events:
+      - http: ANY /
+      - http: ANY {proxy+}
