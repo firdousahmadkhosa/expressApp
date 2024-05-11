@@ -1,7 +1,7 @@
 service: sportligthApp #Name of your App
 provider:
   name: aws
-  runtime: nodejs14.x # Node JS version
+  runtime: nodejs20.x # Node JS version
   memorySize: 512
   timeout: 30
   stage: dev 
